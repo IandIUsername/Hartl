@@ -1,5 +1,6 @@
 Hartl::Application.routes.draw do
   
+  get "users/new"
   match "/signup",  to: "users#new", via: 'get'
   match "/contact", to: "static_pages#contact", via: 'get' 
   match "/help",    to: "static_pages#help", via: 'get'
